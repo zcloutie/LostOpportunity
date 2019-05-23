@@ -16,7 +16,7 @@ const userPool = new AmazonCognitoIdentity.CognitoUserPool(poolData);
 
 var success = false;
 
-function Login(email, password, callback) {
+function Login(email, password, res) {
     var authenticationDetails = new AmazonCognitoIdentity.AuthenticationDetails({
         Username : email,
         Password : password,
@@ -34,14 +34,15 @@ function Login(email, password, callback) {
             console.log('access token + ' + result.getAccessToken().getJwtToken());
             console.log('id token + ' + result.getIdToken().getJwtToken());
             console.log('refresh token + ' + result.getRefreshToken().getToken());
+            res.render("dashboard");
         },
         onFailure: function(err) {
             success = false;
             console.log(err);
+            res.redirect("/"); //probably will have to go to an error page
         },
 
     });
-    callback();
 }
 
 function RegisterUser(email, password, firstname, lastname, accesslevel){
@@ -229,11 +230,8 @@ router.get("/", (req, res) => {
 });
 //RegisterUser("demo@gmail.com", "Abc123!@", "Dr", "Lastnayme", "psychiatrist");
 router.post("/", urlencodedParser, (req, res) => {
-  Login(req.body.email,  req.body.password, function() {
-    console.log(success);
-    //having async issues. success is not being updated until after everything else so for now everything just succeeds
-    res.render("dashboard");
-  });
+  Login(req.body.email,  req.body.password, res)
+  console.log(success);
 });
 
 module.exports = router;
