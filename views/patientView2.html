@@ -51,16 +51,94 @@
 			
 			<!-- Content Heading -->
 			<div class="container-fluid">
-				<h1 class="mt-4">Nima Moayedi</h1>
+				<h1 class="mt-4">Tom Anderson</h1>
 			</div>
 			
 			<!-- Content -->
 			<div class="container-fluid">
-				<div class="row">
-					<div class="col">
-						<img src="../public/images/samplepatient1.jpg" height="200" width="200">
+				<!-- Patient Photo -->
+				<div class="row m-1">
+					<div class="col-2">
+						<img src="../public/images/samplepatient2.jpg" height="200" width="200">
+					</div>
+					
+				<!-- Patient Basic Details -->
+				<div class="col-3 border rounded">
+					<h4>Patient Details</h4>
+					<hr>
+					<p>Age:</p>
+					<p>Address:</p>
+					<p>Phone Number:</p>
+				</div>
+
+				<!-- Patient Prescriptions -->
+				<div class="col-4 border rounded">
+				<h4>Prescriptions</h4>
+				<hr>
+					<form>
+						<div class="form-group">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block">Save</button>
+						<br>
+					</form>
+				</div>
+					
+				</div>
+				
+				<br>
+				
+				<!-- Patient SOAPE Notes Column -->
+				<div class="row m-1">
+					<div class="col-5 border rounded">
+						<h4>SOAPE Notes</h4>
+						<hr>
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Subjective</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Subjective"></textarea>
+						</div>
+						<br>
+						
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Objective</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Objective"></textarea>
+						</div>
+						<br>
+						
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Assessment</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Assessment"></textarea>
+						</div>
+						<br>
+						
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Plan of Care</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Plan of Care"></textarea>
+						</div>
+						<br>
+						
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Evaluation</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Evaluation"></textarea>
+						</div>
+						<br>
+						
+						<button type="button" class="btn btn-primary btn-lg btn-block">Save</button>
+						<br>
+						
 					</div>
 				</div>
+				
 			</div>
 		</div>
 		<!-- /#page-content-wrapper -->
