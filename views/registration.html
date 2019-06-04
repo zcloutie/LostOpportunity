@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Gameplan Reg. 1</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript" src="../routes/register.js"></script>
+
+  </head>
+  <body>
+      <div class="jumbotron text-center">
+        <h1>GamePlan Application</h1>
+        <p>Please enter your information in the fields below</p>
+      </div>
+
+      <form class="form-signin" action="/registration" method="post">
+
+
+    <!--form class="form-row col"-->
+
+        <div class="form-group col-3">
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" id="fName" class="form-control" placeholder="Ex. John" aria-describedby="helpId">
+        </div>
+
+        <div class="form-group col-1">
+          <label for="middle_initial">Middle Initial</label>
+          <input type="text" name="middle_initial" id="mInitial" class="form-control" placeholder="Ex. A" aria-describedby="helpId">
+        </div>
+
+        <div class="form-group col-3">
+          <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" id="lName" class="form-control" placeholder="Ex. Doe" aria-describedby="helpId">
+        </div>
+
+      <!--/form-->
+
+      <!--form class="form-row col"-->
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="genderRadios" id="gender1" value="m" required> Male
+          </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="genderRadios" id="gender2" value="f" required> Female
+          </label>
+        </div>
+
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="genderRadios" id="gender3" value="o" required> Other
+          </label>
+        </div>
+      <!--/form-->
+
+      <!--form class="form-row col"-->
+        <div class="form-group col-2">
+          <label for="DOB">Date of Birth</label>
+          <input type="text" class="form-control" name="DOB" id="DOB" aria-describedby="helpId" placeholder="MM/DD/YYYY">
+        </div>
+
+        <div class="form-group col-2">
+          <label for="SSN">SSN</label>
+          <input type="text" name="SSN" id="SSN" class="form-control" placeholder="###-##-####" aria-describedby="helpId">
+        </div>
+      <!--/form-->
+
+      <div class="form-group col-3">
+        <label for="address">Address</label>
+        <input type="text" name="address" id="address" class="form-control" placeholder="1234 Rainbow Rd." aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" class="form-control" placeholder="Mushroom City" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-1">
+        <label for="state">State</label>
+        <select class="custom-select" name="state" id="state">
+          <option selected>--</option>
+          <option value="al">AL</option>
+          <option value="ak">AK</option>
+          <option value="az">AZ</option>
+          <option value="ar">AR</option>
+          <option value="ca">CA</option>
+          <option value="co">CO</option>
+          <option value="ct">CT</option>
+          <option value="de">DE</option>
+          <option value="fl">FL</option>
+          <option value="ga">GA</option>
+          <option value="hi">HI</option>
+          <option value="id">ID</option>
+          <option value="il">IL</option>
+          <option value="in">IN</option>
+          <option value="ia">IA</option>
+          <option value="ks">KS</option>
+          <option value="ky">KY</option>
+          <option value="la">LA</option>
+          <option value="me">ME</option>
+          <option value="md">MD</option>
+          <option value="ma">MA</option>
+          <option value="mi">MI</option>
+          <option value="mn">MN</option>
+          <option value="ms">MS</option>
+          <option value="mo">MO</option>
+          <option value="mt">MT</option>
+          <option value="ne">NE</option>
+          <option value="nv">NV</option>
+          <option value="nh">NH</option>
+          <option value="nj">NJ</option>
+          <option value="nm">NM</option>
+          <option value="ny">NY</option>
+          <option value="nc">NC</option>
+          <option value="nd">ND</option>
+          <option value="oh">OH</option>
+          <option value="ok">OK</option>
+          <option value="or">OR</option>
+          <option value="pa">PA</option>
+          <option value="ri">RI</option>
+          <option value="sc">SC</option>
+          <option value="sd">SD</option>
+          <option value="tn">TN</option>
+          <option value="tx">TX</option>
+          <option value="ut">UT</option>
+          <option value="vt">VT</option>
+          <option value="va">VA</option>
+          <option value="wa">WA</option>
+          <option value="wv">WV</option>
+          <option value="wi">WI</option>
+          <option value="wy">WY</option>
+        </select>
+      </div>
+
+      <div class="form-group col-1">
+        <label for="zip">Zip</label>
+        <input type="text" name="zip" id="zip" class="form-control" placeholder="01234" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+          <label for="cell">Cell Phone</label>
+          <input type="text" name="cell" id="cell" class="form-control" placeholder="(666) 666-6666" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" class="form-control" placeholder="youremail@something.com" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-2">
+        <label for="enroll">Expected to Enroll</label>
+        <input type="text" class="form-control" name="enroll" id="enroll" aria-describedby="helpId" placeholder="MM/DD/YYYY">
+      </div>
+
+      <div class="form-group col-2">
+        <label>Ethnicity</label>
+        <select class="custom-select" name="ethn" id="ethn">
+          <option selected>--</option>
+          <option value="wht">White</option>
+          <option value="hsp_ltn">Hispanic or Latino</option>
+          <option value="blk_afam">Black or African American</option>
+          <option value="na_ai">Native American or American Indian</option>
+          <option value="azn_pi">Asian or Pacific Islander</option>
+          <option value="oth">Other</option>
+        </select>
+      </div>
+
+      <!--form class="form-row col-4"-->
+        <label>Height</label>
+        <div class="form-group col-2">
+          <select class="custom-select" name="ft" id="ft">
+            <option selected>ft.</option>
+            <option value="8">8'</option>
+            <option value="7">7'</option>
+            <option value="6">6'</option>
+            <option value="5">5'</option>
+            <option value="4">4'</option>
+            <option value="3">3'</option>
+          </select>
+        </div>
+
+        <div class="form-group col-2">
+          <select class="custom-select" name="in" id="in">
+            <option selected>in.</option>
+            <option value="11">11"</option>
+            <option value="10">10"</option>
+            <option value="9">9"</option>
+            <option value="8">8"</option>
+            <option value="7">7"</option>
+            <option value="6">6"</option>
+            <option value="5">5"</option>
+            <option value="4">4"</option>
+            <option value="3">3"</option>
+            <option value="2">2"</option>
+            <option value="1">1"</option>
+            <option value="0">0"</option>
+          </select>
+        </div>
+
+        <label>Weight</label>
+        <div class="form-group col-3">
+          <input type="text" name="weight" id="weight" class="form-control" placeholder="--" aria-describedby="helpId">
+        </div>
+      <!--/form-->
+
+      <div class="form-row col-4">
+        <label>Shoes</label>
+        <div class="form-group col-2">
+            <select class="custom-select" name="shoes" id="shoes">
+              <option selected>--</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+          </div>
+
+          <label>Waist</label>
+          <div class="form-group col-2">
+
+              <select class="custom-select" name="waist" id="waist">
+                <option selected>--</option>
+                <option value="20">20"</option>
+                <option value="21">21"</option>
+                <option value="22">22"</option>
+                <option value="23">23"</option>
+                <option value="24">24"</option>
+                <option value="25">25"</option>
+                <option value="26">26"</option>
+                <option value="27">27"</option>
+                <option value="28">28"</option>
+                <option value="29">29"</option>
+                <option value="30">30"</option>
+                <option value="31">31"</option>
+                <option value="32">32"</option>
+                <option value="33">33"</option>
+                <option value="34">34"</option>
+                <option value="35">35"</option>
+                <option value="36">36"</option>
+                <option value="37">37"</option>
+                <option value="38">38"</option>
+                <option value="39">39"</option>
+                <option value="40">40"</option>
+                <option value="41">41"</option>
+                <option value="42">42"</option>
+                <option value="43">43"</option>
+                <option value="44">44"</option>
+                <option value="45">45"</option>
+                <option value="46">46"</option>
+                <option value="47">47"</option>
+                <option value="48">48"</option>
+                <option value="49">49"</option>
+                <option value="50">50"</option>
+              </select>
+            </div>
+      </div>
+
+
+      <div class="form-group col-2">
+        <label>Shirt Size</label>
+        <select class="custom-select" name="shirt" id="shirt">
+          <option selected>--</option>
+          <option value="xsm">XSM</option>
+          <option value="sm">SM</option>
+          <option value="md">MD</option>
+          <option value="lg">LG</option>
+          <option value="xl">XL</option>
+          <option value="xxl">XXL</option>
+          <option value="xxxl">XXXL</option>
+        </select>
+      </div>
+
+      <div class="form-group col-2">
+        <label for="grade">School Grade</label>
+        <input type="text" name="grade" id="grade" class="form-control" placeholder="--" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-2">
+        <label>Religious Pref.</label>
+        <select class="custom-select" name="religion" id="religion">
+          <option selected>--</option>
+          <option value="prot">Protestantism</option>
+          <option value="cath">Catholicism</option>
+          <option value="morm">Mormonism</option>
+          <option value="islm">Islam</option>
+          <option value="jew">Judaism</option>
+          <option value="budd">Buddhism</option>
+          <option value="hind">Hinduism</option>
+          <option value="othr">Other</option>
+          <option value="none">Unaffiliated</option>
+        </select>
+      </div>
+
+      <div class="form-group col-7">
+        <label><b>Ethnicity, race, religion, nationality, or sexual orientation.</b>
+        Please describe anything of note.</label>
+        <textarea class="form-control" name="" id="" rows="3"></textarea>
+      </div>
+
+      <div class="alert alert-dark" role="alert">
+        <b>Emergency Contact:</b>
+        other than Parent/Guardian (parent/guardian information is collected on the next page)
+      </div>
+
+      <div class="form-group col-3">
+        <label for="relation">Relationship</label>
+        <input type="text" name="relation" id="relation" class="form-control" placeholder="--" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+        <label for="relFN">First Name</label>
+        <input type="text" name="relFN" id="relFN" class="form-control" placeholder="--" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+        <label for="relLN">Last Name</label>
+        <input type="text" name="relLN" id="relLN" class="form-control" placeholder="--" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+        <label for="relPhone">Phone</label>
+        <input type="text" name="relPhone" id="relPhone" class="form-control" placeholder="--" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+        <label for="relAddress">Address</label>
+        <input type="text" name="relAddress" id="relAddress" class="form-control" placeholder="--" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-3">
+        <label for="relCity">City</label>
+        <input type="text" name="relCity" id="relCity" class="form-control" placeholder="--" aria-describedby="helpId">
+      </div>
+
+      <div class="form-group col-1">
+          <label for="relState">State</label>
+          <select class="custom-select" name="relState" id="relState">
+            <option selected>--</option>
+            <option value="al">AL</option>
+            <option value="ak">AK</option>
+            <option value="az">AZ</option>
+            <option value="ar">AR</option>
+            <option value="ca">CA</option>
+            <option value="co">CO</option>
+            <option value="ct">CT</option>
+            <option value="de">DE</option>
+            <option value="fl">FL</option>
+            <option value="ga">GA</option>
+            <option value="hi">HI</option>
+            <option value="id">ID</option>
+            <option value="il">IL</option>
+            <option value="in">IN</option>
+            <option value="ia">IA</option>
+            <option value="ks">KS</option>
+            <option value="ky">KY</option>
+            <option value="la">LA</option>
+            <option value="me">ME</option>
+            <option value="md">MD</option>
+            <option value="ma">MA</option>
+            <option value="mi">MI</option>
+            <option value="mn">MN</option>
+            <option value="ms">MS</option>
+            <option value="mo">MO</option>
+            <option value="mt">MT</option>
+            <option value="ne">NE</option>
+            <option value="nv">NV</option>
+            <option value="nh">NH</option>
+            <option value="nj">NJ</option>
+            <option value="nm">NM</option>
+            <option value="ny">NY</option>
+            <option value="nc">NC</option>
+            <option value="nd">ND</option>
+            <option value="oh">OH</option>
+            <option value="ok">OK</option>
+            <option value="or">OR</option>
+            <option value="pa">PA</option>
+            <option value="ri">RI</option>
+            <option value="sc">SC</option>
+            <option value="sd">SD</option>
+            <option value="tn">TN</option>
+            <option value="tx">TX</option>
+            <option value="ut">UT</option>
+            <option value="vt">VT</option>
+            <option value="va">VA</option>
+            <option value="wa">WA</option>
+            <option value="wv">WV</option>
+            <option value="wi">WI</option>
+            <option value="wy">WY</option>
+          </select>
+        </div>
+
+        <div class="form-group col-3">
+          <label for="relZip">Zip</label>
+          <input type="text" name="relZip" id="relZip" class="form-control" placeholder="--" aria-describedby="helpId">
+        </div>
+
+        <div class="form-group col-3">
+          <label for="password">Password</label>
+          <input type="text" name="password" id="password" class="form-control" placeholder="--" aria-describedby="helpId">
+        </div>
+
+        <button style="width:10%; text-align:center;" class="list-group-item list-group-item-action active" type="submit" id="nextPage">Next</button>
+      </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
