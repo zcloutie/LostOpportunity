@@ -1,7 +1,4 @@
-<!doctype html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
 	<title>GamePlan | Dashboard</title>
 
     <!-- Required meta tags -->
@@ -24,7 +21,19 @@
 	</style>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="../routes/dashboard.js"></script>
+	<!--script src="../routes/dashboard.js"></script-->
+	<script src="../routes/patientinfo.js"></script>
+	<script type="text/javascript">
+		//$(document).ready(function() {
+			//import {cognito} from '../routes/cognito.js';
+			//var cognito = require('../routes/cognito.js');
+		//	getPatientInfo();
+		//	var response = patientinfo.getPatientInfo();
+		//	for(k in response) {
+		//	$("#patients").html('<div class="jumbotron col-sm-10"> <div class="row"> <div class="col col-lg-2">	<img src="../public/images/samplepatient3.jpg" height="100" width="100"> </div>	<div class="col-md-auto">	<h1><a href="../views/patientView3.html"> response[k].first_name + " " + response[k].middle_name + " " +  response[k].last_name </a></h1>	<p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p>	</div></div></div>');
+		//		}
+		//});
+	</script>
 
 </head>
 
@@ -80,47 +89,7 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Display Patient List -->
-
-			<div class="jumbotron col-sm-10">
-				<div class="row">
-					<div class="col col-lg-2">
-						<img src="../public/images/samplepatient1.jpg" height="100" width="100">
-					</div>
-					<div class="col-md-auto">
-						<h1><a href="../views/patientView1.html">Nima Moayedi</a></h1>
-						<p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p>
-					</div>
-				</div>
-			</div>
-			<div class="jumbotron col-sm-10">
-				<div class="row">
-					<div class="col col-lg-2">
-						<img src="../public/images/samplepatient2.jpg" height="100" width="100">
-					</div>
-					<div class="col-md-auto">
-						<h1><a href="../views/patientView2.html">Tom Anderson</a></h1>
-						<p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p>
-					</div>
-				</div>
-			</div>
-			<div class="jumbotron col-sm-10">
-				<div class="row">
-					<div class="col col-lg-2">
-						<img src="../public/images/samplepatient3.jpg" height="100" width="100">
-					</div>
-					<div class="col-md-auto">
-						<h1><a href="../views/patientView3.html">Donald Trump</a></h1>
-						<p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p>
-					</div>
-				</div>
-			</div>
-
-			<p id="patients"> </p>
-
-		</div>
-
+			<div id="patients"><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView16604893280646902.html">Jane R Doe</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientViewAbcdefGhijkldsaf@kljh.html">Abcdef Z Ghijkl</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientViewJaneDoe2.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientViewJaneDoe3.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientViewJaneDoe4.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientViewLeeroyJenkinsqwer@asdf.html">Leeroy T Jenkins</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientViewMnopqrGhijkldsaf@kljh.html">Mnopqr Z Ghijkl</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/person.png" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientViewTrayDow.html">Tray E Dow</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div></div>
 		<!-- /#page-content-wrapper -->
 	</div>
 
@@ -133,6 +102,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</body>
 
-</html>
+
+
+
+
+
+
+
+</div>
+
+
+</body></html>

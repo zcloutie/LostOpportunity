@@ -1,0 +1,147 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<link href="../public/stylesheets/simple-sidebar.css" rel="stylesheet">
+
+	<style>
+	div.sidebar-heading {
+	  text-align: center;
+	}
+
+	div.centerize {
+		align-items: center;
+	}
+	</style>
+</head>
+
+<body>
+
+	<div class="d-flex" id="wrapper">
+
+		<!-- Sidebar -->
+			<div class="bg-light border-right" id="sidebar-wrapper">
+				<div class="sidebar-heading">
+					<img src="../public/images/logo.png" alt="GamePlan Logo" height="75" width="75">
+					<br>
+					<h3>GamePlan</h3>
+				</div>
+				<div class="list-group list-group-flush">
+					<a href="../views/dashboard.html" class="list-group-item list-group-item-action">Home</a>
+					<a href="../views/settings.html" class="list-group-item list-group-item-action">Account Settings</a>
+				</div>
+			</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<!-- Top Header Navbar -->
+		<div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<button type="button" class="btn btn-outline-danger">Log Out</button>
+				</ul>
+			</nav>
+
+			<!-- Content Heading -->
+			<div class="container-fluid" id="patientName"><h1 class="mt-4">null null null</h1></div>
+
+			<!-- Content -->
+			<div class="container-fluid">
+				<!-- Patient Photo -->
+				<div class="row m-1">
+					<div class="col-2">
+						<img src="../public/images/person.png" height="200" width="200">
+					</div>
+
+				<!-- Patient Basic Details -->
+				<div class="col-3 border rounded" id="patientDetails"><p><strong>user_reference</strong>: JaneDoe4<br><strong>gender</strong>: f<br><strong>date_of_birth</strong>: 01/01/1900<br><strong>ssn</strong>: 123-13-1234<br><strong>address</strong>: 1234 Rainbow Rd.<br><strong>city</strong>: Mushroom City<br><strong>state</strong>: ca<br><strong>zip_code</strong>: 12345<br><strong>cell_phone</strong>: 1234567890<br><strong>email</strong>: test4@gmail.com<br><strong>date_expected_to_enroll</strong>: 02/02/2222<br><strong>ethnicity</strong>: oth<br><strong>height</strong>: 962<br><strong>weight</strong>: 27<br><strong>shoe_size</strong>: 27<br><strong>waist</strong>: 12<br><strong>shirt</strong>: md<br><strong>school_grade</strong>: 1<br><strong>religion</strong>: hind<br><strong>any_note</strong>: N/A<br><strong>first_name</strong>: null<br><strong>middle_name</strong>: null<br><strong>last_name</strong>: null<br><strong>tbl_educational_information.user_reference</strong>: 11<br><strong>highest_level</strong>: High School Diploma<br><strong>current_school</strong>: University High School<br><strong>previous_school</strong>: Someone Middle School<br><strong>vocational_school</strong>: null<br><strong>vocational_dates</strong>: null<br><strong>academic_strenghts</strong>: null<br><strong>fav_math</strong>: 0<br><strong>fav_english</strong>: 0<br><strong>fav_science</strong>: 0<br><strong>fav_history</strong>: 0<br><strong>fav_reading</strong>: 0<br><strong>fav_computers</strong>: 0<br><strong>fav_pe</strong>: 0<br><strong>fav_foreign_lang</strong>: 0<br><strong>fav_choir</strong>: 0<br><strong>fav_art</strong>: 0<br><strong>fav_shop</strong>: 0<br><strong>sports_extracur</strong>: none<br><strong>assessed_learning_dis</strong>: 0<br><strong>assessed_desc</strong>: null<br><strong>medical_for_learning</strong>: 0<br><strong>medical_explain</strong>: null<br><strong>learning_issue</strong>: 0<br><strong>learning_issue_desc</strong>: slow<br><strong>educational_consultant</strong>: 0<br><strong>connect_with_ec</strong>: null<br></p></div>
+
+				<!-- Patient Prescriptions -->
+				<div class="col-4 border rounded">
+				<h4>Prescriptions</h4>
+				<hr>
+					<form>
+						<div class="form-group">
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+						<button type="button" class="btn btn-primary btn-lg btn-block">Save</button>
+						<br>
+					</form>
+				</div>
+
+				</div>
+
+				<br>
+
+				<!-- Patient SOAPE Notes Column -->
+				<div class="row m-1">
+					<div class="col-5 border rounded">
+						<h4>SOAPE Notes</h4>
+						<hr>
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Subjective</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Subjective"></textarea>
+						</div>
+						<br>
+
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Objective</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Objective"></textarea>
+						</div>
+						<br>
+
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Assessment</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Assessment"></textarea>
+						</div>
+						<br>
+
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Plan of Care</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Plan of Care"></textarea>
+						</div>
+						<br>
+
+						<div class="input-group">
+						  <div class="input-group-prepend">
+							<span class="input-group-text">Evaluation</span>
+						  </div>
+						  <textarea class="form-control" aria-label="Evaluation"></textarea>
+						</div>
+						<br>
+
+						<button type="button" class="btn btn-primary btn-lg btn-block">Save</button>
+						<br>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+
+	<!-- /#wrapper -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</body></html>

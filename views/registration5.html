@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Gameplan Reg. 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+        <div class="jumbotron text-center">
+        <h1>GamePlan Application</h1>
+        <p>Please enter your information in the fields below</p>
+        </div>
+
+        <div class="form-row col">
+            <label>What is the highest grade your child has completed?</label>
+            <div class="form-group col-2">
+                <select class="custom-select" name="gradeCompleted" id="gradeCompleted">
+                    <option selected>--</option>
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
+                    <option value="5">5th</option>
+                    <option value="6">6th</option>
+                    <option value="7">7th</option>
+                    <option value="8">8th</option>
+                    <option value="9">9th</option>
+                    <option value="10">10th</option>
+                    <option value="11">11th</option>
+                    <option value="12">12th</option>
+                </select>
+            </div>
+        </div>
+
+        <form class="form-row col">
+            <label>Currently attending?</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="attendingSchool" id="attendingSchool" value="y"> Yes
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="attendingSchool" id="attendingSchool" value="n"> No
+                </label>
+            </div>
+        </form>
+
+        <div class="form-group col-4">
+            <label>Name of Current School</label>
+            <input type="text" class="form-control" placeholder="--" name="currentSchool" id="currentSchool" aria-describedby="helpId">
+        </div>
+
+        <div class="form-group col-4">
+            <label>Name of Previous School</label>
+            <input type="text" class="form-control" placeholder="--" name="previousSchool" id="previousSchool" aria-describedby="helpId">
+        </div>
+
+        <form class="form-row col">
+            <label>Is your child behind in credits/classes?</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="creditsRadio" id="creditsRadio" value="n"> No
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="creditsRadio" id="creditsRadio" value="y"> Yes
+                </label>
+            </div>
+        </form>
+
+        <div class="form-group col-7">
+            <label>If yes, please explain</label>
+            <textarea class="form-control" name="creditsNotes" id="creditsNotes" rows="3"></textarea>
+        </div>
+
+        <div class="form-group col-7">
+            <label>Please list your child's academic strengths/interests below.</label>
+            <textarea class="form-control" name="academicInterests" id="academicInterests" rows="3"></textarea>
+        </div>
+
+        <label>Favorite Subjects (check all that apply)</label>
+        <div class="form-group col-10">
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favMath"> Math
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favEnglish"> English
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favScience"> Science
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favHistory"> History
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favReading"> Reading
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favComputers"> Computers
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favPE"> P.E.
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favForeignLang"> Foreign Language
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favMusic"> Music
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favChoir"> Choir
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favArt"> Art
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="favoriteSubjects" id="favoriteSubjects" value="favShop"> Shop
+                </label>
+            </div>
+            <div class="col-3">
+                <label>Other</label>
+                <input type="text" class="form-control" placeholder="--" name="favoriteOther" id="favoriteOther" aria-describedby="helpId">
+            </div>
+        </div>
+
+        <label>Least Favorite Subjects (check all that apply)</label>
+        <div class="form-group col-10">
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastMath"> Math
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastEnglish"> English
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastScience"> Science
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastHistory"> History
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastReading"> Reading
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastComputers"> Computers
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastPE"> P.E.
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastForeignLang"> Foreign Language
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastMusic"> Music
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastChoir"> Choir
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastArt"> Art
+                </label>
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="leastSubjects" id="leastSubjects" value="leastShop"> Shop
+                </label>
+            </div>
+            <div class="col-3">
+                <label>Other</label>
+                <input type="text" class="form-control" placeholder="--" name="leastOther" id="leastOther" aria-describedby="helpId">
+            </div>
+        </div>
+
+        <label>Sports/Extra-curricular Activities</label>
+        <div class="col-6">
+            <label>Athletics</label>
+            <input type="text" class="form-control" placeholder="--" name="extraAthletic" id="extraAthletic" aria-describedby="helpId">
+        </div>
+
+        <div class="col-6">
+            <label>Academic</label>
+            <input type="text" class="form-control" placeholder="--" name="extraAcacademic" id="extraAcacademic" aria-describedby="helpId">
+        </div>
+
+        <div class="col-6">
+            <label>Cultural</label>
+            <input type="text" class="form-control" placeholder="--" name="extraCultural" id="extraCultural" aria-describedby="helpId">
+        </div>
+
+        <div class="col-6">
+            <label>Other</label>
+            <input type="text" class="form-control" placeholder="--" name="extraOther" id="extraOther" aria-describedby="helpId">
+        </div>
+
+        <form class="form-row col">
+            <label>Has your child ever been assessed for learning disabilities?</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="disabilityRadio" id="disabilityRadio" value="n"> No
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="disabilityRadio" id="disabilityRadio" value="y"> Yes
+                </label>
+            </div>
+        </form>
+
+        <div class="form-group col-7">
+            <label>If yes, please describe</label>
+            <textarea class="form-control" name="disabilityExplain" id="disabilityExplain" rows="3"></textarea>
+        </div>
+
+        <form class="form-row col">
+            <label>Has your child received any medical or educational treatment for learning disabilities?</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="disabilityTreatmentRadio" id="disabilityTreatmentRadio" value="n"> No
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="disabilityTreatmentRadio" id="disabilityTreatmentRadio" value="y"> Yes
+                </label>
+            </div>
+        </form>
+
+        <div class="form-group col-7">
+            <label>If yes, please describe</label>
+            <textarea class="form-control" name="disabilityTreatmentExplain" id="disabilityTreatmentExplain" rows="3"></textarea>
+        </div>
+
+        <form class="form-row col">
+            <label>If your there have been no learning disability assessments, do you have any concerns this may be an issue for your child?</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="disabilityIssueRadio" id="disabilityIssueRadio" value="n"> No
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="disabilityIssueRadio" id="disabilityIssueRadio" value="y"> Yes
+                </label>
+            </div>
+        </form>
+
+        <div class="form-group col-7">
+            <label>If yes, please describe</label>
+            <textarea class="form-control" name="disabilityIssueExplain" id="disabilityIssueExplain" rows="3"></textarea>
+        </div>
+
+        <form class="form-row col">
+            <label>Are you currently working with an Education Consultant?</label>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="consultantRadio" id="consultantRadio" value="n"> No
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="radio" name="consultantRadio" id="consultantRadio" value="y"> Yes
+                </label>
+            </div>
+        </form>
+
+        <div class="form-group col-7">
+            <label>If not, would you like to be connected to an Educational Consultant?</label>
+            <textarea class="form-control" name="consultantConnect" id="consultantConnect" rows="3"></textarea>
+        </div>
+
+
+        <div class="form-row col">
+          <a href="../views/registration4.html" style="width:10%; text-align:center; margin-right:3%;" class="list-group-item list-group-item-action active" id="previousPage">Previous</a>
+          <a href="../views/registration6.html" style="width:10%; text-align:center;" class="list-group-item list-group-item-action active" id="nextPage">Next</a>
+        </div>
+
+
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

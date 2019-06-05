@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en"><head>
+	<title>GamePlan | Dashboard</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<link href="../public/stylesheets/simple-sidebar.css" rel="stylesheet">
+
+	<style>
+	div.sidebar-heading {
+	  text-align: center;
+	}
+
+	div.centerize {
+		align-items: center;
+	}
+	</style>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!--script src="../routes/dashboard.js"></script-->
+	<script src="../routes/patientinfo.js"></script>
+	<script type="text/javascript">
+		//$(document).ready(function() {
+			//import {cognito} from '../routes/cognito.js';
+			//var cognito = require('../routes/cognito.js');
+		//	getPatientInfo();
+		//	var response = patientinfo.getPatientInfo();
+		//	for(k in response) {
+		//	$("#patients").html('<div class="jumbotron col-sm-10"> <div class="row"> <div class="col col-lg-2">	<img src="../public/images/samplepatient3.jpg" height="100" width="100"> </div>	<div class="col-md-auto">	<h1><a href="../views/patientView3.html"> response[k].first_name + " " + response[k].middle_name + " " +  response[k].last_name </a></h1>	<p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p>	</div></div></div>');
+		//		}
+		//});
+	</script>
+
+</head>
+
+<body>
+
+	<div class="d-flex" id="wrapper">
+
+		<!-- Sidebar -->
+			<div class="bg-light border-right" id="sidebar-wrapper">
+				<div class="sidebar-heading">
+					<img src="../public/images/logo.png" alt="GamePlan Logo" height="75" width="75">
+					<br>
+					<h3>GamePlan</h3>
+				</div>
+				<div class="list-group list-group-flush">
+					<a href="../views/dashboard.html" class="list-group-item list-group-item-action active">Home</a>
+					<a href="../views/settings.html" class="list-group-item list-group-item-action">Account Settings</a>
+				</div>
+			</div>
+		<!-- /#sidebar-wrapper -->
+
+		<!-- Page Content -->
+		<!-- Top Header Navbar -->
+		<div id="page-content-wrapper">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<button type="button" class="btn btn-outline-danger">Log Out</button>
+				</ul>
+			</nav>
+
+			<!-- Welcome <User> -->
+			<div class="container-fluid">
+				<h1 class="mt-4">Welcome, Dr. Lastnayme.</h1>
+			</div>
+
+			<!-- Rest of Page Content -->
+
+			<!-- Search Bar -->
+			<div class="input-group mb-3">
+				<div class="col-sm-10">
+					<input type="text" class="form-control" placeholder="Search Patient Name">
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Sort By:
+					</button>
+
+					<div class="dropdown-menu">
+						<a class="dropdown-item">Patient ID (Ascending)</a>
+						<a class="dropdown-item">Patient ID (Descending)</a>
+						<a class="dropdown-item">A-Z (Ascending)</a>
+						<a class="dropdown-item">A-Z (Descending)</a>
+					</div>
+				</div>
+			</div>
+			<div id="patients">
+			<div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">Jane R Doe</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">Jane R Doe</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div><div class="jumbotron col-sm-10"> <div class="row"><div class="col col-lg-2"><img src="../public/images/samplepatient3.jpg" height="100" width="100"></div><div class="col-md-auto"><h1><a href="../views/patientView3.html">null null null</a></h1><p class="lead">Next Appointment: {{Date}} | Previous Appointment: {{Date}}</p></div></div></div></div>
+		<!-- /#page-content-wrapper -->
+	</div>
+
+	<!-- /#wrapper -->
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+</div>
+</body></html>

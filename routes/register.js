@@ -21,7 +21,10 @@ router.post("/", urlencodedParser, (req, res) => {
     }
   }
   xhr.send(JSON.stringify({
-   user_reference: Math.random() * 100000000,
+   user_reference: req.body.first_name + req.body.last_name + req.body.email,
+   last_name: req.body.last_name,
+   first_name: req.body.first_name,
+   middle_name: req.body.middle_initial,
    gender: req.body.genderRadios,
    date_of_birth: req.body.DOB,
    ssn: req.body.SSN,
